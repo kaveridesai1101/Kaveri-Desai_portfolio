@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { RESUME_DATA } from "@/lib/data";
 import { Bot, Network, GitBranch, Database, Code2, Layout, Hammer } from "lucide-react";
 
-const ICON_MAP: Record<string, React.ElementType> = {
+const ICON_MAP: Record<string, any> = {
   "bot": Bot,
   "network": Network,
   "git-branch": GitBranch,
