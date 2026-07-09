@@ -59,11 +59,14 @@ function FloatingParticles() {
   return (
     <points ref={pointsRef}>
       <bufferGeometry>
+        {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+        {/* @ts-ignore */}
         <bufferAttribute
           attach="attributes-position"
           count={positions.length / 3}
           array={positions}
           itemSize={3}
+          args={[positions, 3]}
         />
       </bufferGeometry>
       <pointsMaterial size={0.03} color="#06B6D4" transparent opacity={0.6} sizeAttenuation />
